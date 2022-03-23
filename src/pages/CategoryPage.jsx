@@ -13,7 +13,7 @@ const CategoryPage = () => {
       setRecipes(JSON.parse(check))
     } else {
       const res = await axios.get(
-        `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&cuisine=${category}`
+        `https://api.spoonacular.com/recipes/complexSearch?apiKey=6df787a95f8f4305932b36cdf58d8074&cuisine=${category}`
       )
       localStorage.setItem(category, JSON.stringify(res.data.results))
       setRecipes(res.data.results)

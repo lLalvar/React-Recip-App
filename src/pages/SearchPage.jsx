@@ -8,7 +8,7 @@ const SearchPage = () => {
 
   const getSearched = async (name) => {
     const res = await axios.get(
-      `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&query=${name}`
+      `https://api.spoonacular.com/recipes/complexSearch?apiKey=6df787a95f8f4305932b36cdf58d8074&query=${name}`
     )
     setSearchedRecipes(res.data.results)
   }

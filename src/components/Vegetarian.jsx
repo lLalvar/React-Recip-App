@@ -22,7 +22,7 @@ const Vegetarian = () => {
       setVegetarian(JSON.parse(check))
     } else {
       const res = await axios.get(
-        `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9&tags=vegetarian`
+        `https://api.spoonacular.com/recipes/random?apiKey=6df787a95f8f4305932b36cdf58d8074&number=9&tags=vegetarian`
       )
       localStorage.setItem('vegetarian', JSON.stringify(res.data.recipes))
       setVegetarian(res.data.recipes)

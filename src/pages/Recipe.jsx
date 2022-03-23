@@ -9,7 +9,7 @@ const Recipe = () => {
 
   const fetchDetails = async (name) => {
     const res = await axios.get(
-      `https://api.spoonacular.com/recipes/${params}/information?apiKey=${process.env.REACT_APP_API_KEY}`
+      `https://api.spoonacular.com/recipes/${params}/information?apiKey=1f4431ebff0d46c2913b845d69c959fb`
     )
     setDetails(res.data)
   }
