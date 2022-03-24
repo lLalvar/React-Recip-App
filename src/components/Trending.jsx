@@ -33,7 +33,7 @@ const Trending = () => {
   }
 
   return (
-    <div className='container mx-auto my-10'>
+    <div className='container mx-auto pb-10'>
       <h3 className='font-semibold mb-6 md:text-xl'>Trending</h3>
       {screenWidth > 680 ? (
         <Splide
@@ -54,7 +54,11 @@ const Trending = () => {
                   <h4 className='absolute text-white left-1/2 bottom-1 sm:bottom-6 -translate-x-1/2 text-xs sm:text-lg w-full'>
                     {recipe.title}
                   </h4>
-                  <img src={recipe.image} alt='' className=' object-cover' />
+                  <img
+                    src={recipe.image}
+                    alt=''
+                    className='object-cover w-full'
+                  />
                 </div>
               </Link>
             </SplideSlide>
